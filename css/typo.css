@@ -1,0 +1,85 @@
+/* MOBILE FIRST */
+
+
+
+html {
+  font-size: 62.5%;
+}
+html, body {
+	font-family: 'Ubuntu', sans-serif;
+	/* 	color from option A */
+	color: #464749 !important;
+}
+body {
+	font-size: 1.2rem;
+	line-height: 3.4rem;
+	font-weight: 300; /* normal */
+	background-color: #58595b;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: .5em;
+    line-height: 1.2em;
+
+}
+
+a {
+  text-decoration: none;
+  transition: color .7s ease;
+  -webkit-transition: color .7s ease;
+}
+
+/* from w3.css Are em's or rem's better?*/
+p {
+  font-size: 1.4em;
+}
+h1 {
+    font-size: 3.6em;
+}
+h2 {
+    font-size: 3em;
+}
+h3 {
+    font-size: 2.4em;
+}
+h4 {
+    font-size: 2em;
+}
+h5 {
+    font-size: 1.8em;
+}
+h6 {
+    font-size: 1.6em;
+}
+ul {
+  font-size: 1.4rem;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  transition: .5s;
+}
+
+a:visited {
+
+}
+
+#blog-title {
+	font-family: 'scriptina';
+	font-size: 5rem !important;
+	font-weight: 600;
+  line-height: 5rem;
+}
+#author {
+  color: var(--red-text);
+  font-weight: 800;
+}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  /* html {
+    font-size: 80%;
+  } */
+}

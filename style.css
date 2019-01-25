@@ -27,11 +27,11 @@ Project specific code starts at line 107
 /* @import url("typo.css"); */
 
 /* VARIABLES */
-:root {
+/* :root {
   --textcolor: #58595b;
-  --body-bgcolor: #58595b; /* rgb(222, 222, 222); */
+  --body-bgcolor: #58595b;
   --wrap-bgcolor: rgba(63, 127, 191, 0.35);
-  --grid-bgcolor: white /*rgba(63, 127, 191, 0.2)*/;
+  --grid-bgcolor: white;
   --text-hover-color: rgba(255, 204, 102, .8);
   --active-bgcolor: rgba(75, 73, 123, 1);
   --link-color: #4b497b;
@@ -39,7 +39,7 @@ Project specific code starts at line 107
   --nav-border: grey;
   --red-text: #632122;
   --statement-bgcolor: #e1edee;
-}
+} */
 
 /* =========== TYPOGRAPHY ================ */
 
@@ -53,14 +53,7 @@ Project specific code starts at line 107
 	font-weight: normal;
 	font-style: normal;
 }
-/* @font-face{
-	font-family: 'MyWebFont';
-	src: url('WebFont.eot');
-	src: url('WebFont.eot?iefix') format('eot'),
-	     url('WebFont.woff') format('woff'),
-	     url('WebFont.ttf') format('truetype'),
-	     url('WebFont.svg#webfont') format('svg');
-} */
+
 @font-face {
 	font-family: 'TempusSans';
 	src: url('fonts/TempusSans/tempsitc.eot?iefix') format('eot'),
@@ -78,18 +71,25 @@ html {
 html, body {
 	font-family: 'Ubuntu', sans-serif;
 	/* 	color from option A */
-	color: #464749 !important;
+/* 	#464749 */
+
+}
+html, body, a, a:link, a:visited {
+	color: #656668 !important;
+/* 	color: #737477 !important; */
 }
 body {
-	font-size: 1.4rem;
-	line-height: 3.4rem;
+	font-size: 1.3rem;
+	line-height: 2.8rem;
 	font-weight: 300; /* normal */
-  color: var(--textcolor);
-  background-color: var(--body-bgcolor);
+  	background-color: #58595b;
 }
-
+a, a:link, a:visited {
+/* 	color: #6d6e70 !important; */
+/* 	color: #737477 !important; */
+/*  color: #464749 !important; */
+}
 a {
-  color: var(--red-text);
   text-decoration: none;
   transition: color .7s ease;
   -webkit-transition: color .7s ease;
@@ -97,25 +97,23 @@ a {
 
 a:link {
   text-decoration: none;
-  color: var(--red-text);
 }
 
 a:hover {
-  color: var(--text-hover-color);
+  color:  rgba(255, 204, 102, .8);
   transition: .5s;
 }
 a:visited {
   text-decoration: none;
-  color: var(--red-text);
 }
 
 h1, h2, h3, h4, h5, h6 {
     margin-bottom: .5em;
     line-height: 1.2em;
 }
-/* from w3.css Are em's or rem's better?*/
 p {
-  font-size: 1.4em;
+/* 	declared in body tag */
+/*   font-size: 1.4em; */
 }
 h1 {
     font-size: 3.6em;
@@ -135,6 +133,11 @@ h5 {
 h6 {
     font-size: 1.6em;
 }
+	/* override bootstrap bold, strong styles  */
+b, strong {
+font-weight: 500 !important;
+}
+
 ul {
   font-size: 1.4rem;
 }
@@ -150,54 +153,55 @@ li  {
 	font-weight:400;
   line-height: 2rem;
 }
+
 #author {
-  color: var(--red-text);
+  color:  #632122;
   font-size: 2.2em;
   font-weight: 800;
 }
+#quote{
+/* 	color: #7A7879; */
+}
 .title  {
   font-family: 'Scriptina';
-  font-size: 1.8em;
+  font-size: 2.6em;	
 }
 
-/* ==================================== */
-/* =========== GRID STYLES ============ */
-/* ==================================== */
-
-/* .full-page-wrap {
-
-} */
-
-.grid-wrap  {
-  margin: auto;
-  background-color: var(--grid-bgcolor);
+.intro-text	{
+	font-size: 1.2em;
+	font-weight: 500;
 }
+
 /* ====================================== */
 /*        Caitlin's Blog Layout STYLES         */
 /* ====================================== */
 
 p {
-  padding: 1em 0 0.5em 0;
+/*   padding: 1em 0 0.5em 0; */
 }
 .grid-wrap  {
+	width: 100%;
+    max-width: 900px;
+    height: 100%;
+    margin: auto;
+  background-color: white;
+/*   display:-ms-grid; */
   display: grid;
+  -ms-grid-columns: 38% 62%;
   grid-template-columns: 38% 62%; /* 38% 62% */
-  grid-template-rows: 300px 130px; /*54vh 20vh*/ /* I left the last 2 rows out.  They seem to expand with content that way */
-  grid-template-areas:
+  -ms-grid-rows: 261px 102px;
+  grid-template-rows: 261px 102px; /*54vh 20vh*/ /* I left the last 2 rows out.  They seem to expand with content that way */
+	grid-template-areas:
     "header header"
     "link quote"
     "left right"
     "footer footer";
-    width: 90%;
-    max-width: 1200px;
-    height: 100%;
-    margin: auto;
-    background-color: var(--grid-bgcolor);
+    
 }
 /* #logo height set the same as .grid-wrap first row
 to allow custom headers from resposive-mobile theme */
 #logo {
-  height: 300px;
+  height: 261px;
 }
 #caitlins-blog-header  {
   grid-area: header;
@@ -221,16 +225,16 @@ to allow custom headers from resposive-mobile theme */
 }
 #quote  {
   grid-area: quote;
-  font-size: 1.2em;
+  font-size: 1.4em;
   text-align: center;
-  padding: 0 3em;
+  padding: 1.3em 5.2em;
 }
 #caitlin-statement {
   grid-area: left;
   overflow: hidden;
 }
   #caitlin {
-    height: 400px;
+    height: 294px;
   }
   #caitlin img {
     width: 100%;
@@ -239,74 +243,74 @@ to allow custom headers from resposive-mobile theme */
   }
   #statement {
     height: 100%;
-    padding: 1em 1.9em;
+    padding: 1em 3em;
   }
 #caitlin-statement, #statement, #blog-menu, #single-blog-post{
-  margin: 0.8em 0 0 0;
+  margin: 0.6em 0 0 0;
 }
 #blog-menu {
-
-  /* overflow: hidden; */
+grid-area: right;
 }
 .blog-post  {
-  grid-area: right;
+/*   grid-area: right; */
+/*   display:-ms-grid; */
   display: grid;
-  /* grid-template-columns: 1fr 1fr; */
   grid-template-areas:
     "image title";
-    min-height: 0;  /* NEW */
+  -ms-grid-columns: 50% 50%;
+  grid-template-columns: 50% 50%;
+  min-height: 0;  /* NEW */
   min-width: 0;   /* NEW; needed for Firefox */
-  margin: 0 0 3em 0;
+/*   margin: 0 0 3em 0; */
 }
+/* .blog-post:after {
+    clear: both;
+    content: "";
+    display: table;
+} */
 .featured-image {
   grid-area: image;
   margin: 3em 0 0 6em;
 }
 .featured-image img {
   object-fit: cover;
-  width: 200px;
-  height: 200px;
+  width: 195px;
+  height: 195px;
   border-radius: 50%;
 }
-.title-summary {
-  /* position: relative; */
+#title-summary {
   grid-area: title;
   align-self: center;
-  margin: 0 0 0 3em;
-  min-width: 0;      /* NEW; needed for Firefox */
+  margin: 0 0 -3em 1em;
 }
 .title p, .summary p {
   margin:  0;
   padding: 0;
 }
 .title p {
-  margin: 0 0 -.7em 0;
+  margin: 0 0 -.5em 0;
 }
-.title::after {
+/* .title:after {
   display: block;
+  color: #464749 !important;
   content: "..............................................................................................................................................................................................................................................................................................................................................................................................................................................................";
   overflow: hidden;
+} */
+.summary:before {
+  display: block;
+  margin: 1.4em 0 0 0;
+  color: #464749 !important;
+  content:"............................................................................................................................................................................................................................................................................................";
+  letter-spacing: 2px; /* Use letter-spacing to increase space between dots*/
+	overflow: hidden;
 }
 .summary  {
-  grid-area: summary;
+/*   grid-area: summary; */
 }
 
-footer {
-  color: var(--red-text);
-  grid-area: footer;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-}
-.footer-item {
-  /* float: left;
-  width: 24%; */
- /* flex-basis: 25%; */
-}
-/* .footer-item:after {
-  content: "|"
-} */
-/* Layout Styles for single post pages */
+
+/* =======  Layout Styles for single post pages ======== */
+
 #single-blog-post {
   /* span blog post over 2 grid columns */
   /* two column layout for posts created in WP Gutenberg editor */
@@ -330,6 +334,9 @@ figure.wp-block-img {
 }
 div.single-post-content>p:first-child {
   display: none;
+}	
+div.single-post-content p.intro-text {
+  display: none;
 }
 /* div.single-post-content + p, .single-post-content p:last-child {
   display: none;
@@ -345,88 +352,131 @@ div.single-post-content>p:first-child {
   background-color: #eee3e3; /* light pink */
 }
 #statement {
-  background-color: var(--statement-bgcolor);
+  background-color: #e1edee;
   overflow: hidden;
-}
-#blog-title {
-	font-family: 'scriptina';
-	font-size: 10rem !important;
-	font-weight:400;
-  line-height: 2rem;
-}
-#author {
-  color: var(--red-text);
-  font-size: 2.2em;
-  font-weight: 800;
-}
-.title {
-  font-family: 'Scriptina';
-  font-size: 1.8em;
 }
 .single-post-title {
   display: none;
 }
- /* editor-styles */
+#footer::before {
+  color: #464749 !important;
+  content:"............................................................................................................................................................................................................................................................................................";
+  letter-spacing: 2px; /* Use letter-spacing to increase space between dots*/
+}
+
+footer {
+	
+  color: #632122;
+  grid-area: footer;
+/*   display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around; */
+}
+.footer-item {
+	color:  #632122;
+    position: relative;
+	top: 13px;
+    text-align: center;
+    float: left;
+    width: 25%;
+}
+.footer-item span{
+	display: inline-block;
+	vertical-align: middle;
+	margin: -8px 0 0 0;
+}
+.footer-item a img {
+  padding: 8px 12px;
+}
+
+.footer-item a:link, .footer-item a:visited {
+color: #632122 !important;
+}
+div.footer-item:before {
+    position: absolute;
+	height: 70%;
+	width: 2px;
+    left: 0px;
+    content: "";
+	background-color: #632122;
+}
+.footer-item:first-child:before {
+    background: none;
+}
+
+	/* to accomodate padding on img */
+.footer-item:last-child:before {
+    height: 50%;
+}
+
+#footer {
+  height: 86px;
+  overflow: hidden;
+}
+/* ==================================== */
+/* ========= EDITOR STYLES ============ */
+/* ==================================== */
+
   .scriptina-post-heading {
     font-family: 'Scriptina';
     font-size: 3.2em;
     margin: 1em 0;
   }
   .maroon-all-caps {
-    color: var(--red-text);
+    color: #632122;
     font-weight: 600;
     text-transform: uppercase;
   }
   .tempus-sans {
     font-family: 'TempusSans';
   }
-#footer::before {
-  content:"............................................................................................................................................................................................................................................................................................";
-  letter-spacing: 2px; /* Use letter-spacing to increase space between dots*/
-}
-#footer {
-  overflow: hidden;
-}
 
 /* ================ WP overrides =============== */
 
 .more-link {
-  display: none;
+  display: none !important;
 }
 
  /* ============= MEDIA QUERIES ============== */
- @media only screen and (max-width: 1160px) {
+ @media only screen and (max-width: 1160px) and (-webkit-min-device-pixel-ratio: 2){
    #caitlin img {
      object-position: 20% 50%;
    }
  }
 
- @media only screen and (max-width: 940px) {
-
+ @media only screen and (max-device-width: 850px) and (-webkit-min-device-pixel-ratio: 2) {
+	.featured-image {
+    margin-left: 4em;
+	}
    #quote {
     padding: 0;
     }
    #quote  p {
      font-size: 1em;
      padding: 0.5em 0.5em;
-   }
+   	}
    #blog-title, #author {
    	width: 98%;
-   }
-   #blog-title {
+   	}
+   	#blog-title {
      padding: .7em 0 0.5em 0;
-   }
-   #caitlin {
+   	}
+   	#caitlin {
      display: none;
      }
-   #statement {
-     grid-area: left;
-   }
-  .scriptina-post-heading {
+  	.scriptina-post-heading {
       margin: 0;
-  }
+  	}
+	.footer-item {
+		width: 50%;
+	}
+	.footer-item:before {
+    display: none;
+	}	 
 }
+
 @media only screen and (max-width: 830px) {
+	
   .grid-wrap  {
     grid-template-areas:
       "header header"
@@ -434,18 +484,25 @@ div.single-post-content>p:first-child {
       "left left"
       "right right"
       "footer footer";
+	 grid-template-columns: 35% 65%;
+  }
+  div.wp-block-column:first-child {
+    	flex-basis: 35%;
   }
   #caitlin-statement {
     grid-area: left;
   }
   .title::after {
-    display: inline-block;
+    display: block;
   }
-  .title-summary {
-    min-width: 170px;
+  #title-summary a {
+	  display: block;
+/*     min-width: 170px; */
   }
+  
 }
 @media only screen and (max-width: 698px) {
+	
   .grid-wrap  {
     grid-template-columns: 50% 50%;
     grid-template-rows: 200px 100px;
@@ -477,7 +534,7 @@ div.single-post-content>p:first-child {
       margin: 0;
   }
   footer {
-    padding: 0 10%;
+/*     padding: 0 10%; */
     /* padding-left: 10%; */
   }
   .footer-item {
@@ -485,6 +542,7 @@ div.single-post-content>p:first-child {
   }
 }
 @media only screen and (max-width: 540px) {
+	
   .grid-wrap  {
     grid-template-rows: 120px 60px;
   }
@@ -499,7 +557,12 @@ div.single-post-content>p:first-child {
   #ts-logo {
     grid-area: 2 / 1 / span 1 / span 2;
   }
-  .title-summary {
+  #title-summary {
     min-width: 0;
   }
+	
+	.footer-item {
+		width: 100%;
+	}
+	 
 }

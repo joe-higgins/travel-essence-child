@@ -268,15 +268,25 @@ grid-area: right;
     content: "";
     display: table;
 } */
-.featured-image {
+.image-wrapper {
   grid-area: image;
   margin: 3em 0 0 6em;
+	width: 16vw;
+    height: 16vw;
+	text-align: center; 
+	position: relative; 
+	padding-bottom: 15%; 
+	border-radius: 50%; 
+	overflow: hidden; 
 }
 .featured-image img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0; 
+  left: 0; 
   object-fit: cover;
-  width: 195px;
-  height: 195px;
-  border-radius: 50%;
+/*   border-radius: 50%; */
 }
 #title-summary {
   grid-area: title;

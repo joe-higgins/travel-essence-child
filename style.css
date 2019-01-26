@@ -478,6 +478,11 @@ div.footer-item:before {
    	#caitlin {
      display: none;
      }
+		 .image-wrapper {
+	 	  margin: 2em 0 0 1em;
+	 		width: 28vw;
+	 	  height: 28vw;
+	 	}
   	.scriptina-post-heading {
       margin: 0;
   	}
@@ -507,10 +512,8 @@ div.footer-item:before {
     grid-area: left;
   }
 	.image-wrapper {
-	  margin: 2em 0 0 4em;
-		width: 28vw;
-	  height: 28vw;
-	}
+	 margin: 2em 0 0 3em;
+ }
   .title::after {
     display: block;
   }

@@ -458,7 +458,7 @@ div.footer-item:before {
    }
  }
 
- @media only screen and (max-device-width: 850px) and (-webkit-min-device-pixel-ratio: 2) {
+ @media only screen and (max-width: 850px) {
 	.featured-image {
     margin-left: 4em;
 	}
@@ -507,7 +507,6 @@ div.footer-item:before {
     grid-area: left;
   }
 	.image-wrapper {
-
 	  margin: 2em 0 0 4em;
 		width: 28vw;
 	  height: 28vw;
@@ -577,6 +576,9 @@ div.footer-item:before {
   #ts-logo {
     grid-area: 2 / 1 / span 1 / span 2;
   }
+	.image-wrapper {
+	  margin: 2em 0 0 2em;
+	}
   #title-summary {
     min-width: 0;
   }

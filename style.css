@@ -181,7 +181,7 @@ p {
 }
 .grid-wrap  {
 	width: 100%;
-    max-width: 900px;
+    max-width: 980px;
     height: 100%;
     margin: auto;
   background-color: white;
@@ -486,6 +486,10 @@ div.footer-item:before {
   	.scriptina-post-heading {
       margin: 0;
   	}
+	#footer {
+  	height: 100%;
+		padding: 0 0 1em 0;
+	}
 	.footer-item {
 		width: 50%;
 	}

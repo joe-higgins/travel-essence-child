@@ -164,7 +164,7 @@ li  {
 }
 .title  {
   font-family: 'Scriptina';
-  font-size: 2.6em;	
+  font-size: 2.6em;
 }
 
 .intro-text	{
@@ -196,7 +196,7 @@ p {
     "link quote"
     "left right"
     "footer footer";
-    
+
 }
 /* #logo height set the same as .grid-wrap first row
 to allow custom headers from resposive-mobile theme */
@@ -271,20 +271,24 @@ grid-area: right;
 .image-wrapper {
   grid-area: image;
   margin: 3em 0 0 6em;
-	width: 16vw;
-    height: 16vw;
-	text-align: center; 
-	position: relative; 
-	padding-bottom: 15%; 
-	border-radius: 50%; 
-	overflow: hidden; 
+	width: 20vw;
+  height: 20vw;
+	max-width: 190px;
+	max-height: 190px;
+	min-width: 50px;
+	min-height: 50px;
+	text-align: center;
+	position: relative;
+	padding-bottom: 15%;
+	border-radius: 50%;
+	overflow: hidden;
 }
 .featured-image img {
   position: absolute;
   width: 100%;
   height: 100%;
-  top: 0; 
-  left: 0; 
+  top: 0;
+  left: 0;
   object-fit: cover;
 /*   border-radius: 50%; */
 }
@@ -344,7 +348,7 @@ figure.wp-block-img {
 }
 div.single-post-content>p:first-child {
   display: none;
-}	
+}
 div.single-post-content p.intro-text {
   display: none;
 }
@@ -375,7 +379,7 @@ div.single-post-content p.intro-text {
 }
 
 footer {
-	
+
   color: #632122;
   grid-area: footer;
 /*   display: flex;
@@ -482,11 +486,11 @@ div.footer-item:before {
 	}
 	.footer-item:before {
     display: none;
-	}	 
+	}
 }
 
 @media only screen and (max-width: 830px) {
-	
+
   .grid-wrap  {
     grid-template-areas:
       "header header"
@@ -502,6 +506,12 @@ div.footer-item:before {
   #caitlin-statement {
     grid-area: left;
   }
+	.image-wrapper {
+
+	  margin: 2em 0 0 4em;
+		width: 28vw;
+	  height: 28vw;
+	}
   .title::after {
     display: block;
   }
@@ -509,10 +519,10 @@ div.footer-item:before {
 	  display: block;
 /*     min-width: 170px; */
   }
-  
+
 }
 @media only screen and (max-width: 698px) {
-	
+
   .grid-wrap  {
     grid-template-columns: 50% 50%;
     grid-template-rows: 200px 100px;
@@ -552,7 +562,7 @@ div.footer-item:before {
   }
 }
 @media only screen and (max-width: 540px) {
-	
+
   .grid-wrap  {
     grid-template-rows: 120px 60px;
   }
@@ -570,9 +580,9 @@ div.footer-item:before {
   #title-summary {
     min-width: 0;
   }
-	
+
 	.footer-item {
 		width: 100%;
 	}
-	 
+
 }

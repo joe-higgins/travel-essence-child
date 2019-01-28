@@ -16,9 +16,9 @@
 
 /* ===== NAME AND DESCRIPTION OF PROJECT HERE  ===== */
 /*
-Caitlin Humphrey's Blog
+Travel Essence Blog
 1/9/19
-Project specific code starts at line 107
+Project specific code starts at line 150
 */
 
 @import url("css/meyer_reset.css");
@@ -70,13 +70,9 @@ html {
 }
 html, body {
 	font-family: 'Ubuntu', sans-serif;
-	/* 	color from option A */
-/* 	#464749 */
-
 }
 html, body, a, a:link, a:visited {
 	color: #656668 !important;
-/* 	color: #737477 !important; */
 }
 body {
 	font-size: 1.3rem;
@@ -85,9 +81,7 @@ body {
   	background-color: #58595b;
 }
 a, a:link, a:visited {
-/* 	color: #6d6e70 !important; */
-/* 	color: #737477 !important; */
-/*  color: #464749 !important; */
+	color: #632122 !important;
 }
 a {
   text-decoration: none;
@@ -110,10 +104,6 @@ a:visited {
 h1, h2, h3, h4, h5, h6 {
     margin-bottom: .5em;
     line-height: 1.2em;
-}
-p {
-/* 	declared in body tag */
-/*   font-size: 1.4em; */
 }
 h1 {
     font-size: 3.6em;
@@ -147,6 +137,8 @@ li  {
   list-style-type: disc;
   margin: 0 0 0 1em;
 }
+/* Project specific code */
+
 #blog-title {
 	font-family: 'scriptina';
 	font-size: 10rem !important;
@@ -176,16 +168,14 @@ li  {
 /*        Caitlin's Blog Layout STYLES         */
 /* ====================================== */
 
-p {
-/*   padding: 1em 0 0.5em 0; */
-}
 .grid-wrap  {
 	width: 100%;
     max-width: 980px;
     height: 100%;
     margin: auto;
   background-color: white;
-/*   display:-ms-grid; */
+	/* for older ie? */
+  display:-ms-grid;
   display: grid;
   -ms-grid-columns: 38% 62%;
   grid-template-columns: 38% 62%; /* 38% 62% */
@@ -198,7 +188,7 @@ p {
     "footer footer";
 
 }
-/* #logo height set the same as .grid-wrap first row
+/* #logo height set the same as .grid-wrap first row ^
 to allow custom headers from resposive-mobile theme */
 #logo {
   height: 261px;
@@ -252,8 +242,6 @@ to allow custom headers from resposive-mobile theme */
 grid-area: right;
 }
 .blog-post  {
-/*   grid-area: right; */
-/*   display:-ms-grid; */
   display: grid;
   grid-template-areas:
     "image title";
@@ -261,13 +249,7 @@ grid-area: right;
   grid-template-columns: 50% 50%;
   min-height: 0;  /* NEW */
   min-width: 0;   /* NEW; needed for Firefox */
-/*   margin: 0 0 3em 0; */
 }
-/* .blog-post:after {
-    clear: both;
-    content: "";
-    display: table;
-} */
 .image-wrapper {
   grid-area: image;
   margin: 3em 0 0 6em;
@@ -403,9 +385,9 @@ footer {
   padding: 8px 12px;
 }
 
-.footer-item a:link, .footer-item a:visited {
+/* .footer-item a:link, .footer-item a:visited {
 color: #632122 !important;
-}
+} */
 div.footer-item:before {
     position: absolute;
 	height: 70%;

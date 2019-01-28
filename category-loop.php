@@ -1,5 +1,5 @@
 <!-- ============  TESTING CATEGORY PAGE ==================  -->
-<!-- ========= NOT A REAL EXCERPT. ONLY FOR STORAGE/TESTING =============== -->
+<!-- ========= NOT A REAL PAGE/EXCERPT. ONLY FOR STORAGE/TESTING =============== -->
 <!-- Wine and Food -->
 <?php
     // Get the ID of a given category

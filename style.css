@@ -303,7 +303,10 @@ grid-area: right;
 .summary  {
 /*   grid-area: summary; */
 }
-
+#nav-home {
+text-align: center;
+margin: 3em 0 0 0;
+}
 
 /* =======  Layout Styles for single post pages ======== */
 
@@ -368,7 +371,7 @@ footer {
   flex-flow: row wrap;
   justify-content: space-around; */
 }
-.footer-item {
+.footer-item, .nav-item {
 	color:  #632122;
     position: relative;
 	top: 13px;

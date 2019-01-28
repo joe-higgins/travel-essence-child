@@ -33,7 +33,7 @@ if ( ! defined( 'WPINC' ) ) {
 				'parent'  => 0
 		) );
     foreach($categories as $category){
-			print_r( $counter );
+			//print_r( $counter );
 			// Get the ID of a given category
 	    $category_id = $category->term_id;
 			$category_name = get_cat_name( $category_id );
@@ -57,4 +57,5 @@ if ( ! defined( 'WPINC' ) ) {
 				<!-- END BLOG POST -->
     <?php
         }
+				// END foreach
 ?>

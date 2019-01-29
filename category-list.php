@@ -53,9 +53,11 @@ if ( ! defined( 'WPINC' ) ) {
 			    <a href="<?php echo esc_url( $category_link ); ?>"><div class="title"><p><?php echo $category_name; ?></p></div></a>
 			    <div class="summary"><p><?php the_content(); ?></p></div>
 			  </div>
+
 			</div>
 				<!-- END BLOG POST -->
     <?php
         }
 				// END foreach
+
 ?>

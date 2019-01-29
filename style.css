@@ -134,16 +134,24 @@ ul {
 figure {margin: 0 !important;}
 li  {
   font-size: 1.8rem;
-  list-style-type: disc;
+  list-style-type: none;
   margin: 0 0 0 1em;
 }
 /* Project specific code */
 
-#blog-title {
+#blog-title  {
 	font-family: 'scriptina';
 	font-size: 10rem !important;
 	font-weight:400;
   line-height: 2rem;
+}
+.single-post-title {
+	display: none;
+	font-family: 'scriptina';
+	font-size: 4.2rem !important;
+	font-weight:400;
+  line-height: 2rem;
+
 }
 
 #author {
@@ -239,8 +247,10 @@ to allow custom headers from resposive-mobile theme */
   margin: 0.6em 0 0 0;
 }
 #blog-menu {
+	position: relative;
 grid-area: right;
 }
+
 .blog-post  {
   display: grid;
   grid-template-areas:
@@ -249,6 +259,9 @@ grid-area: right;
   grid-template-columns: 50% 50%;
   min-height: 0;  /* NEW */
   min-width: 0;   /* NEW; needed for Firefox */
+}
+#blog-menu .blog-post:last-of-type {
+	padding: 0 0 5em 0;
 }
 .image-wrapper {
   grid-area: image;
@@ -307,7 +320,19 @@ grid-area: right;
 text-align: center;
 margin: 3em 0 0 0;
 }
+#full-nav .nav-item {
+	width: 19%;
+}
+#cat-nav {
+width: 100%;
+position: absolute;
+bottom: 1em;
 
+}
+#cat-nav .nav-item {
+width: 50%;
+
+}
 /* =======  Layout Styles for single post pages ======== */
 
 #single-blog-post {
@@ -354,8 +379,9 @@ div.single-post-content p.intro-text {
   background-color: #e1edee;
   overflow: hidden;
 }
-.single-post-title {
-  display: none;
+.dropdown-menu>li>a	{
+	font-size: .7em !important;
+	list-style-type: none !important;
 }
 #footer::before {
   color: #464749 !important;
@@ -468,14 +494,14 @@ div.footer-item:before {
 	 		width: 28vw;
 	 	  height: 28vw;
 	 	}
-  	.scriptina-post-heading {
+  	/* .scriptina-post-heading {
       margin: 0;
-  	}
+  	} */
 	#footer {
   	height: 100%;
 		padding: 0 0 1em 0;
 	}
-	.footer-item {
+	.footer-item, #full-nav .nav-item{
 		width: 50%;
 	}
 	.footer-item:before {

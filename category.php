@@ -38,9 +38,8 @@ get_header(); ?>
       } ?>
 
     <?php endwhile; endif; ?>
-		<nav id="nav-home">
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><em>HOME</em></a>
-		</nav>
+<?php get_template_part( 'cat-nav', get_post_format() ); ?>
 </div>
 <!-- end blog-menu -->
+
 <?php get_footer(); ?>

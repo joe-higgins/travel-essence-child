@@ -441,7 +441,13 @@ div.footer-item:before {
 /* ==================================== */
 /* ========= EDITOR STYLES ============ */
 /* ==================================== */
-
+.scriptina-post-title {
+	text-decoration: underline;
+	font-family: 'Scriptina';
+	font-weight: 600;
+	font-size: 3.4em;
+	margin: 1.2em 0;
+}
   .scriptina-post-heading {
     font-family: 'Scriptina';
     font-size: 3.2em;

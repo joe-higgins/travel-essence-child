@@ -83,6 +83,10 @@ body {
 a, a:link, a:visited {
 	color: #632122 !important;
 }
+/* override color above in admin bar */
+#wpadminbar .ab-empty-item, #wpadminbar a.ab-item, #wpadminbar>#wp-toolbar span.ab-label, #wpadminbar>#wp-toolbar span.noticon {
+    color: #eee !important;
+}
 a {
   text-decoration: none;
   transition: color .7s ease;
@@ -100,7 +104,9 @@ a:hover {
 a:visited {
   text-decoration: none;
 }
-
+p	{
+	padding: .3em 0;
+}
 h1, h2, h3, h4, h5, h6 {
     margin-bottom: .5em;
     line-height: 1.2em;
@@ -244,7 +250,7 @@ to allow custom headers from resposive-mobile theme */
     padding: 1em 3em;
   }
 #caitlin-statement, #statement, #blog-menu, #single-blog-post{
-  margin: 0.6em 0 0 0;
+  margin: 0;
 }
 #blog-menu {
 	position: relative;

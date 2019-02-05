@@ -27,4 +27,4 @@ get_header(); ?>
 
 </div>
 <!-- end blog-menu -->
-<?php get_footer(); ?>
+<?php get_footer();

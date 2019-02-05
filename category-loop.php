@@ -97,6 +97,6 @@ foreach ( $categories as $category ) {
         esc_html( $category->name )
     );
 }
-?>
+//<!-- ============  END TESTING CATEGORY PAGE ==================  -->
 
-<!-- ============  END TESTING CATEGORY PAGE ==================  -->
+?>

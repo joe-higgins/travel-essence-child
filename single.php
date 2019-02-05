@@ -32,4 +32,4 @@ if ( ! defined( 'WPINC' ) ) {
   <?php endwhile; endif; ?>
 <!-- </section> -->
 <!-- end blog-menu -->
-<?php get_footer(); ?>
+<?php get_footer();

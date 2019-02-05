@@ -1,5 +1,5 @@
-<!-- Navigation code -->
 <?php
+//<!-- Navigation code -->
    $current_category = get_the_category();
    //$current_category[0]->term_id; used to access first array in nested array.
    //may need to rework this if there are problems later!

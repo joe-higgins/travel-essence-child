@@ -1,3 +1,4 @@
+<?php
 <nav id="post-nav">
   <div class="nav-item"><a href="<?php echo esc_url( $category_link ); ?>">Back to: <?php echo $category_name; ?></a></div>
   <div class="nav-item">

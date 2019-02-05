@@ -1,4 +1,4 @@
-<!-- Navigation code -->
+<?php 
 <nav id="cat-nav">
   <div class="nav-item"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a></div>
   <div class="dropdown nav-item">

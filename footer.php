@@ -19,7 +19,7 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 ?>
-<!DOCTYPE html>
+
       <footer id="footer">
         <div class="footer-item">
 			<span>+1 781.934.6752</span>

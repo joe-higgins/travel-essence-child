@@ -2,7 +2,7 @@
 /**
  * Single
  *
- * 
+ *
  *
  * @link http://www.joehiggins.me
  *
@@ -19,7 +19,6 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 ?>
-<!DOCTYPE html>
 <?php get_header(); ?>
 
 

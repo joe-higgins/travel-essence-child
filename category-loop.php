@@ -1,7 +1,7 @@
-<!-- ============  TESTING CATEGORY PAGE ==================  -->
-<!-- ========= NOT A REAL PAGE/EXCERPT. ONLY FOR STORAGE/TESTING =============== -->
-<!-- Wine and Food -->
 <?php
+//<!-- ============  TESTING CATEGORY PAGE ==================  -->
+//<!-- ========= NOT A REAL PAGE/EXCERPT. ONLY FOR STORAGE/TESTING =============== -->
+//<!-- Wine and Food -->
     // Get the ID of a given category
     $category_id = get_cat_ID( 'Wine and Food' );
 

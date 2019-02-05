@@ -83,10 +83,7 @@ body {
 a, a:link, a:visited {
 	color: #632122 !important;
 }
-/* override color above in admin bar */
-#wpadminbar .ab-empty-item, #wpadminbar a.ab-item, #wpadminbar>#wp-toolbar span.ab-label, #wpadminbar>#wp-toolbar span.noticon {
-    color: #eee !important;
-}
+
 a {
   text-decoration: none;
   transition: color .7s ease;
@@ -250,7 +247,7 @@ to allow custom headers from resposive-mobile theme */
     padding: 1em 3em;
   }
 #caitlin-statement, #statement, #blog-menu, #single-blog-post{
-  margin: 0;
+  margin: .5em 0;
 }
 #blog-menu {
 	position: relative;
@@ -473,6 +470,16 @@ div.footer-item:before {
 .more-link {
   display: none !important;
 }
+
+/* override link color in admin bar */
+#wpadminbar .ab-empty-item, #wpadminbar a.ab-item, #wpadminbar>#wp-toolbar span.ab-label, #wpadminbar>#wp-toolbar span.noticon {
+    color: #eee !important;
+}
+/* fixes extra space from read-more p tag added by WP */
+.single-post-content {
+	margin: -0.5em 0 0 0;
+}
+
 
  /* ============= MEDIA QUERIES ============== */
  @media only screen and (max-width: 1160px) and (-webkit-min-device-pixel-ratio: 2){

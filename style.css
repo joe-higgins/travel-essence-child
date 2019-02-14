@@ -181,7 +181,7 @@ li  {
 
 .grid-wrap  {
 	width: 100%;
-    max-width: 980px;
+    max-width: 980px;/* try 1040 */
     height: 100%;
     margin: auto;
   background-color: white;
@@ -226,9 +226,9 @@ to allow custom headers from resposive-mobile theme */
 }
 #quote  {
   grid-area: quote;
-  font-size: 1.4em;
+  font-size: 1.2em;
   text-align: center;
-  padding: 1.3em 5.2em;
+  padding: 1.3em 5em;
 }
 #caitlin-statement {
   grid-area: left;
@@ -244,7 +244,9 @@ to allow custom headers from resposive-mobile theme */
   }
   #statement {
     height: 100%;
-    padding: 1em 3em;
+    padding: 5em 4em;
+		font-size: 1.1em;
+		line-height: 2.5;
   }
 #caitlin-statement, #statement, #blog-menu, #single-blog-post{
   margin: .5em 0;
@@ -509,7 +511,7 @@ div.footer-item:before {
     }
    #quote  p {
      font-size: 1em;
-     padding: 0.5em 0.5em;
+     padding: 1.7em 0.5em;
    	}
    #blog-title, #author {
    	width: 98%;
@@ -581,7 +583,8 @@ div.footer-item:before {
     height: 200px;
   }
   #quote  p {
-    line-height: 1.7em;
+		/* padding: 1.7em 0.5em; */
+    /* line-height: 1.7em; */
   }
   .wp-block-columns {
     flex-wrap: wrap-reverse !important;

@@ -451,11 +451,23 @@ div.footer-item:before {
 	font-size: 3.4em;
 	margin: 1.2em 0;
 }
-  .scriptina-post-heading {
+  .scriptina-post-heading, .scriptina-cat-heading {
     font-family: 'Scriptina';
     font-size: 3.2em;
     margin: 1em 0;
   }
+	.scriptina-cat-heading {
+		padding:0 0 1em 0;
+		text-align: center;
+	}
+	.scriptina-cat-heading:after {
+		display: block;
+		position: relative;
+		content: " ";
+		border-bottom: solid 1px;
+		width: 80%;
+		margin: auto;
+	}
   .maroon-all-caps {
     color: #632122;
     font-weight: 600;

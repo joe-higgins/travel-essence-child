@@ -20,6 +20,7 @@
 get_header(); ?>
 <?php get_sidebar(); ?>
 <div id="blog-menu">
+  <h1 id="category-title" class="scriptina-cat-heading"><?php single_cat_title(); ?></h1>
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
       <!-- contents of the loop -->
 

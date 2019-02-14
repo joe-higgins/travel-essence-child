@@ -251,9 +251,9 @@ to allow custom headers from resposive-mobile theme */
   }
   #statement {
     height: 100%;
-    padding: 5em 4em;
+    padding: 3em;
 		font-size: 1.1em;
-		line-height: 2.5;
+		line-height: 3;
   }
 #caitlin-statement, #statement, #blog-menu, #single-blog-post{
   margin: .5em 0;

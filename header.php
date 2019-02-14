@@ -45,4 +45,4 @@
         </header>
         <!-- <nav id="nav"> -->
           <a id="ts-logo" href="http://www.travelsommelier.com" target="_blank"></a>
-          <aside id="quote"><em><p>Sharing inspiration acquired from travels around the globe.</p></em></aside>
+          <aside id="quote"><p><em>Sharing inspiration acquired from travels around the globe.</em></p></aside>

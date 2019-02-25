@@ -127,9 +127,9 @@ h6 {
     font-size: 1.6em;
 }
 	/* override bootstrap bold, strong styles  */
-b, strong {
+/* b, strong {
 font-weight: 500 !important;
-}
+} */
 
 ul {
   font-size: 1.4rem;
@@ -166,10 +166,19 @@ li  {
 /* 	color: #7A7879; */
 }
 .title  {
-  font-family: 'Scriptina';
-  font-size: 2.6em;
+  /* font-family: 'Scriptina'; */
+	text-transform: uppercase;
+	color: #632122;
+  font-size: 1.4em;
+	letter-spacing: 2px;
 }
-
+.cat-title  {
+  font-family: 'Scriptina';
+	/* text-transform: uppercase; */
+	color: #632122;
+  font-size: 2.4em;
+	/* letter-spacing: 2px; */
+}
 .intro-text	{
 	font-size: 1.2em;
 	font-weight: 500;
@@ -181,7 +190,7 @@ li  {
 
 .grid-wrap  {
 	width: 100%;
-    max-width: 980px;/* try 1040 */
+    max-width: 1040px;/* or 980 */
     height: 100%;
     margin: auto;
   background-color: white;
@@ -267,8 +276,8 @@ grid-area: right;
   display: grid;
   grid-template-areas:
     "image title";
-  -ms-grid-columns: 50% 50%;
-  grid-template-columns: 50% 50%;
+  -ms-grid-columns: 42% 58%;
+  grid-template-columns: 42% 58%;
   min-height: 0;  /* NEW */
   min-width: 0;   /* NEW; needed for Firefox */
 }
@@ -277,7 +286,7 @@ grid-area: right;
 }
 .image-wrapper {
   grid-area: image;
-  margin: 3em 0 0 6em;
+  margin: 3em 0 0 4.4em;
 	width: 20vw;
   height: 20vw;
 	max-width: 190px;
@@ -319,7 +328,7 @@ grid-area: right;
 } */
 .summary:before {
   display: block;
-  margin: 1.4em 0 0 0;
+  margin: 0 0 0 0;
   color: #464749 !important;
   content:"............................................................................................................................................................................................................................................................................................";
   letter-spacing: 2px; /* Use letter-spacing to increase space between dots*/
@@ -388,7 +397,12 @@ div.single-post-content p.intro-text {
   background-color: #eee3e3; /* light pink */
 }
 #statement {
-  background-color: #e1edee;
+  background:
+		url("images/white-logo.png")
+		top 100px
+		right 20px  / 550px  /* position / size */
+     no-repeat                /* repeat */
+		 #e1edee;
   overflow: hidden;
 }
 .dropdown-menu>li>a	{
@@ -460,24 +474,35 @@ div.footer-item:before {
 	font-size: 3.4em;
 	margin: 1.2em 0;
 }
+  .scriptina-post-heading {
+		margin: 1em 0;
+	}
+.scriptina-cat-heading {
+	margin: 1em 0 0 0;
+}
   .scriptina-post-heading, .scriptina-cat-heading {
     font-family: 'Scriptina';
     font-size: 3.2em;
-    margin: 1em 0;
   }
 	.scriptina-cat-heading {
-		padding:0 0 1em 0;
+		padding:0 0 0 0;
 		text-align: center;
 	}
+
 	.scriptina-cat-heading:after {
 		display: block;
 		position: relative;
-		content: " ";
-		border-bottom: solid 1px;
+		top: -20px;
+		color: #464749 !important;
+	  content:"............................................................................................................................................................................................................................................................................................";
+		font-size: .4em;
+		letter-spacing: 2px; /* Use letter-spacing to increase space between dots*/
+		overflow: hidden;
 		width: 80%;
 		margin: auto;
 	}
   .maroon-all-caps {
+		padding: 1.6em 0 0 0;
     color: #632122;
     font-weight: 600;
     text-transform: uppercase;
@@ -530,7 +555,7 @@ div.footer-item:before {
      display: none;
      }
 		 .image-wrapper {
-	 	  margin: 2em 0 0 1em;
+	 	  margin: 2em 0 0 -1em;
 	 		width: 28vw;
 	 	  height: 28vw;
 	 	}

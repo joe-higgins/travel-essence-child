@@ -19,7 +19,7 @@
 	</div>
   </a>
   <div id="title-summary">
-    <a href="<?php echo esc_url( $category_link ); ?>"><div class="title"><p>Wine and Food</p></div></a>
+    <a href="<?php echo esc_url( $category_link ); ?>"><div class="cat-title"><p>Wine and Food</p></div></a>
     <div class="summary"><p><?php the_content(); ?></p></div>
   </div>
 <!-- END BLOG POST -->

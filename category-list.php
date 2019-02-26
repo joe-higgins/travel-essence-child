@@ -43,8 +43,10 @@
 				</div>
 			  </a>
 			  <div id="title-summary">
-			    <a href="<?php echo esc_url( $category_link ); ?>"><div class="cat-title"><p><?php echo $category_name; ?></p></div></a>
-			    <div class="summary"><p><?php the_content(); ?></p></div>
+			    <a href="<?php echo esc_url( $category_link ); ?>">
+						<div class="cat-title"><p><?php echo $category_name; ?></p></div>
+					</a>
+					<div class="summary"><p><?php the_content(); ?></p></div>
 			  </div>
 
 			</div>

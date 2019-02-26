@@ -510,7 +510,11 @@ div.footer-item:before {
   .tempus-sans {
     font-family: 'TempusSans';
   }
-
+	.author {
+		font-size: 1em;
+		text-align: right;
+		font-style: oblique;
+	}
 /* ================ WP overrides =============== */
 
 .more-link {

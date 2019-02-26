@@ -25,8 +25,13 @@ if ( ! defined( 'WPINC' ) ) {
 
 
     <div class="single-post-content">
-			<div class="single-post-title"><p><?php the_title(); ?></p></div>
-			<p><?php the_content(); ?></p>
+			<div class="single-post-title">
+				<p><?php the_title(); ?></p>
+			</div>
+
+			<p>
+				<?php the_content(); ?>
+			</p>
 		</div>
 
 		<?php get_template_part( 'full-nav', get_post_format() ); ?>

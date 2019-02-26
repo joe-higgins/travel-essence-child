@@ -73,10 +73,10 @@ function arphabet_widgets_init() {
 	register_sidebar( array(
 		'name'          => 'TS Left Sidebar',
 		'id'            => 'ts_home_left',
-		'before_widget' => '<div>',
+		'before_widget' => '<div class="subscribe-field">',
 		'after_widget'  => '</div>',
-		'before_title'  => '<h2 class="rounded">',
-		'after_title'   => '</h2>',
+		'before_title'  => '<h3 class="subscribe-title">',
+		'after_title'   => '</h3>',
 	) );
 
 }

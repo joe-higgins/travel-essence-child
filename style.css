@@ -515,6 +515,13 @@ div.footer-item:before {
 		text-align: right;
 		font-style: oblique;
 	}
+/* ============ Subscribe form ================ */
+.subscribe-field {
+	width: 70%;
+}
+.subscribe-title {
+	font-size: 2em;
+}
 /* ================ WP overrides =============== */
 
 .more-link {

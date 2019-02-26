@@ -517,10 +517,13 @@ div.footer-item:before {
 	}
 /* ============ Subscribe form ================ */
 .subscribe-field {
-	width: 70%;
+	margin: 4em 2em;
+}
+.subscribe-field form{
+	font-size: .8em;
 }
 .subscribe-title {
-	font-size: 2em;
+	font-size: 1.4em;
 }
 /* ================ WP overrides =============== */
 

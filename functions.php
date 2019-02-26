@@ -71,8 +71,8 @@ add_action( 'after_setup_theme', 'travel_essence_setup' );
 function arphabet_widgets_init() {
 
 	register_sidebar( array(
-		'name'          => 'Left Sidebar',
-		'id'            => 'home_left',
+		'name'          => 'TS Left Sidebar',
+		'id'            => 'ts_home_left',
 		'before_widget' => '<div>',
 		'after_widget'  => '</div>',
 		'before_title'  => '<h2 class="rounded">',

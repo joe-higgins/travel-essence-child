@@ -272,7 +272,7 @@ to allow custom headers from resposive-mobile theme */
 grid-area: right;
 }
 
-.blog-post  {
+.blog-post, .cat-blog-post  {
   display: grid;
   grid-template-areas:
     "image title";
@@ -281,12 +281,15 @@ grid-area: right;
   min-height: 0;  /* NEW */
   min-width: 0;   /* NEW; needed for Firefox */
 }
+.cat-blog-post .image-wrapper {
+	margin: 6em 0 0 4.4em;
+}
 #blog-menu .blog-post:last-of-type {
 	padding: 0 0 5em 0;
 }
 .image-wrapper {
   grid-area: image;
-  margin: 3em 0 0 4.4em;
+  margin: 2em 0 0 4.4em;
 	width: 20vw;
   height: 20vw;
 	max-width: 190px;
@@ -409,6 +412,16 @@ div.single-post-content p.intro-text {
 	font-size: .7em !important;
 	list-style-type: none !important;
 }
+#full-nav::before {
+	position: relative;
+	top: 1em;
+  color: #464749 !important;
+  content:"............................................................................................................................................................................................................................................................................................";
+  letter-spacing: 2px; /* Use letter-spacing to increase space between dots*/
+}
+#full-nav {
+
+}
 #footer::before {
   color: #464749 !important;
   content:"............................................................................................................................................................................................................................................................................................";
@@ -474,8 +487,8 @@ div.footer-item:before {
 	font-size: 3.4em;
 	margin: 1.2em 0;
 }
-  .scriptina-post-heading {
-		margin: 1em 0;
+.scriptina-post-heading {
+	margin: 1em 0 .4em 0;
 	}
 .scriptina-cat-heading {
 	margin: 1em 0 0 0;
@@ -487,12 +500,13 @@ div.footer-item:before {
 	.scriptina-cat-heading {
 		padding:0 0 0 0;
 		text-align: center;
+		line-height: 1.2;
 	}
 
 	.scriptina-cat-heading:after {
 		display: block;
 		position: relative;
-		top: -20px;
+		/* top: -20px; */
 		color: #464749 !important;
 	  content:"............................................................................................................................................................................................................................................................................................";
 		font-size: .4em;
@@ -557,7 +571,7 @@ div.footer-item:before {
     }
    #quote  p {
      font-size: 1em;
-     padding: 1.7em 0.5em;
+     /* padding: 1.7em 0.5em; */
    	}
    #blog-title, #author {
    	width: 98%;

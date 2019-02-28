@@ -36,7 +36,7 @@
 			$category_desc = category_description( $category_id );
 			?>
 						<!-- BEGIN BLOG POST	 -->
-			<div class="blog-post">
+			<div class="cat-blog-post">
 			  <a  class="featured-image" href="<?php echo esc_url( $category_link ); ?>">
 			  	<div class="image-wrapper">
 				  <img src="<?php echo get_stylesheet_directory_uri(); ?>/category-images/<?php echo $category->category_nicename; ?>.jpg" alt="">

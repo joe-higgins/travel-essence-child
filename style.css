@@ -706,17 +706,12 @@ div.footer-item:before {
 }
 
 @media print {
-	/* body {
-			display: table;
-			table-layout: fixed;
-			padding: 2em 0 0 2em;
-			height: auto;
-	} */
+	
 	.grid-wrap  {
 	  -ms-grid-columns: 32% 63%;
 	  grid-template-columns: 32% 63%;
-		/* -ms-grid-rows: 261px 102px;
-	  grid-template-rows: 261px 102px; */
+		-ms-grid-rows: 261px 102px;
+	  grid-template-rows: 261px 102px;
 	}
 
 	#ts-logo::before {
@@ -732,5 +727,5 @@ div.footer-item:before {
   abbr[title]:after {
     content: none !important;
   }
-	footer {page-break-after: always;}
+/* 	footer {page-break-after: always;} */
 }

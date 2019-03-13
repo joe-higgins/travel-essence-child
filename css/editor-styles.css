@@ -1,6 +1,25 @@
 /* editor css style for Travel Essence blog
 /* Joe Higgins - 2019 */
 
+.title  {
+  /* font-family: 'Scriptina'; */
+	text-transform: uppercase;
+	color: #632122;
+  font-size: 1.4em;
+	letter-spacing: 2px;
+}
+.cat-title  {
+  font-family: 'Scriptina';
+	/* text-transform: uppercase; */
+	color: #632122;
+  font-size: 2.4em;
+	/* letter-spacing: 2px; */
+}
+.intro-text	{
+	font-size: 1.2em;
+	font-weight: 500;
+}
+
 .red-all-caps {
   text-transform: uppercase;
   color: red;
@@ -16,12 +35,26 @@
   font-family: 'Scriptina';
   font-size: 2.4em;
 }
-.maroon-all-caps {
+.scriptina-cat-heading {
+  padding:0 0 0 0;
+  text-align: center;
+  line-height: 1.2;
+}
+.maroon-all-caps, .maroon-all-caps-lg {
+  padding: 1.6em 0 0 0;
   color: #632122;
-  /* var(--red-text)  */
   font-weight: 600;
   text-transform: uppercase;
 }
+.maroon-all-caps-lg {
+  font-size: 120%;
+}
 .tempus-sans {
   font-family: 'TempusSans';
+}
+.author {
+  font-weight: bold;
+  font-size: .8em;
+  text-align: right;
+  font-style: oblique;
 }

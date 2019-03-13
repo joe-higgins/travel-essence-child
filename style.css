@@ -515,17 +515,21 @@ div.footer-item:before {
 		width: 80%;
 		margin: auto;
 	}
-  .maroon-all-caps {
+  .maroon-all-caps, .maroon-all-caps-lg {
 		padding: 1.6em 0 0 0;
     color: #632122;
     font-weight: 600;
     text-transform: uppercase;
   }
+	.maroon-all-caps-lg {
+		font-size: 120%;
+  }
   .tempus-sans {
     font-family: 'TempusSans';
   }
 	.author {
-		font-size: 1em;
+		font-weight: bold;
+		font-size: .8em;
 		text-align: right;
 		font-style: oblique;
 	}
@@ -699,4 +703,34 @@ div.footer-item:before {
 		width: 100%;
 	}
 
+}
+
+@media print {
+	/* body {
+			display: table;
+			table-layout: fixed;
+			padding: 2em 0 0 2em;
+			height: auto;
+	} */
+	.grid-wrap  {
+	  -ms-grid-columns: 32% 63%;
+	  grid-template-columns: 32% 63%;
+		/* -ms-grid-rows: 261px 102px;
+	  grid-template-rows: 261px 102px; */
+	}
+
+	#ts-logo::before {
+	  content: url("images/ts-logo.png");
+		height: 100px;
+	}
+  /* Override responsive theme and bootstrap to prevent URL's frpm showing on print page */
+
+  a[href]:after {
+    content: none !important;
+  }
+
+  abbr[title]:after {
+    content: none !important;
+  }
+	footer {page-break-after: always;}
 }

@@ -569,9 +569,7 @@ div.footer-item:before {
  }
 
  @media only screen and (max-width: 850px) {
-	.featured-image {
-    margin-left: 4em;
-	}
+   
    #quote {
     padding: 0;
     }
@@ -596,6 +594,9 @@ div.footer-item:before {
   	/* .scriptina-post-heading {
       margin: 0;
   	} */
+	.featured-image {
+    margin-left: -2em;
+	}
 	#footer {
   	height: 100%;
 		padding: 0 0 1em 0;
@@ -609,7 +610,7 @@ div.footer-item:before {
 }
 
 @media only screen and (max-width: 830px) {
-
+	
   .grid-wrap  {
     grid-template-areas:
       "header header"
@@ -635,6 +636,9 @@ div.footer-item:before {
 	  display: block;
 /*     min-width: 170px; */
   }
+.featured-image {
+    margin-left: 3em;
+	}
 
 }
 @media only screen and (max-width: 698px) {
@@ -670,6 +674,9 @@ div.footer-item:before {
   #caitlin-statement, #statement, #blog-menu {
       margin: 0;
   }
+  .featured-image {
+    margin-left: 0em;
+	}
   footer {
 /*     padding: 0 10%; */
     /* padding-left: 10%; */

@@ -569,7 +569,7 @@ div.footer-item:before {
  }
 
  @media only screen and (max-width: 850px) {
-   
+
    #quote {
     padding: 0;
     }
@@ -610,7 +610,7 @@ div.footer-item:before {
 }
 
 @media only screen and (max-width: 830px) {
-	
+
   .grid-wrap  {
     grid-template-areas:
       "header header"

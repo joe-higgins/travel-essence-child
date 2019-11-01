@@ -34,10 +34,10 @@ if ( ! defined( 'WPINC' ) ) {
 		</div>
         <div class="footer-item">
           <span>
-			  <a href="#" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/social-icons/fb_icon.png" alt="facebook icon"></a>
-			  <a href="#" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/social-icons/in_icon.png" alt="instagram icon"></a>
-			  <a href="#" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/social-icons/ln.png" alt="linkedIn icon"></a>
-			  <a href="#" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/social-icons/tw_icon.png" alt="twitter icon"></a>
+			  <a href="https://www.facebook.com/travelsommelier/" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/social-icons/fb_icon.png" alt="facebook icon"></a>
+			  <a href="https://www.instagram.com/travelsommelier1/" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/social-icons/in_icon.png" alt="instagram icon"></a>
+			  <a href="https://www.linkedin.com/company/2245870/admin/" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/social-icons/ln.png" alt="linkedIn icon"></a>
+			  <a href="https://twitter.com/travelsommelier" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/social-icons/tw_icon.png" alt="twitter icon"></a>
 			</span>
         </div>
       </footer>

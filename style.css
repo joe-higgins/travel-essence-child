@@ -243,13 +243,18 @@ to allow custom headers from resposive-mobile theme */
 	    height: 100%;
 	    object-fit: cover;
 	  }
-	  #statement {
+	  #statement, #subscribe {
 	    height: 100%;
 	    padding: 3em;
 			font-size: 1.1em;
 			line-height: 3;
 	  }
-#caitlin-statement, #statement, #blog-menu, #single-blog-post{
+
+		#subscribe {
+
+		}
+
+#caitlin-statement, #statement, #blog-menu, #single-blog-post {
   margin: .5em 0;
 }
 #blog-menu {
@@ -539,16 +544,16 @@ div.footer-item:before {
 		text-align: right;
 		font-style: oblique;
 	}
-/* ============ Subscribe form ================ */
-.subscribe-field {
-	margin: 4em 2em;
-}
-.subscribe-field form{
-	font-size: .8em;
-}
-.subscribe-title {
-	font-size: 1.2em;
-}
+	/* ============ Subscribe form ================ */
+	.subscribe-field {
+		/* margin: 4em 2em; */
+	}
+	.subscribe-field form{
+		font-size: .8em;
+	}
+	.subscribe-title {
+		font-size: 1.2em;
+	}
 /* ================ WP overrides =============== */
 
 .more-link {

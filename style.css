@@ -232,20 +232,23 @@ to allow custom headers from resposive-mobile theme */
   grid-area: left;
   overflow: hidden;
 }
-  #caitlin {
-    height: 294px;
-  }
-  #caitlin img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  #statement {
-    height: 100%;
-    padding: 3em;
-		font-size: 1.1em;
-		line-height: 3;
-  }
+	#left-sidebar {
+
+	}
+	  #caitlin {
+	    height: 294px;
+	  }
+	  #caitlin img {
+	    width: 100%;
+	    height: 100%;
+	    object-fit: cover;
+	  }
+	  #statement {
+	    height: 100%;
+	    padding: 3em;
+			font-size: 1.1em;
+			line-height: 3;
+	  }
 #caitlin-statement, #statement, #blog-menu, #single-blog-post{
   margin: .5em 0;
 }
@@ -381,7 +384,8 @@ div.single-post-content p.intro-text {
 #quote  {
   background-color: #eee3e3; /* light pink */
 }
-#statement {
+/* #statement */
+#left-sidebar {
   background:
 		url("images/white-logo.png")
 		top 100px

@@ -253,6 +253,10 @@ to allow custom headers from resposive-mobile theme */
 		#subscribe {
 
 		}
+		#tag-line {
+			text-align: center;
+			padding: 0 0 2rem 0;
+		}
 
 #caitlin-statement, #statement, #blog-menu, #single-blog-post {
   margin: .5em 0;

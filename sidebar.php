@@ -37,6 +37,7 @@ if ( ! defined( 'WPINC' ) ) {
 		<div id="subscribe">
 			<?php dynamic_sidebar( 'ts_home_left' ); ?>
 		</div>
+		<p id="tag-line" class="maroon-all-caps">HIGHLY PERSONALIZED LUXURY TRAVEL</p>
 	</div>
 	<!-- end left-sidebar -->
 </section>

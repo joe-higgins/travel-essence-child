@@ -38,6 +38,7 @@ if ( ! defined( 'WPINC' ) ) {
 			<?php dynamic_sidebar( 'ts_home_left' ); ?>
 		</div>
 	</div>
-
+	<!-- end left-sidebar -->
 </section>
+<!-- end caitlin-statement -->
 <!-- end wp sidebar -->

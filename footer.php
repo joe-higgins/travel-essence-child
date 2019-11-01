@@ -25,11 +25,11 @@ if ( ! defined( 'WPINC' ) ) {
 			<span>+1 781.934.6752</span>
 		</div>
         <div class="footer-item">
-			<span><a href="mailto:caitlin@travelsommelier.com">caitlin@travelsommelier.com</a></span>
+			<span><a href="https://travelsommelier.com" target="_blank">travelsommelier.com</a></span>
 		</div>
         <div class="footer-item">
 			<span>
-				<a href="https://travelsommelier.com/live/about/contact-us/" target="_blank">CONTACT US</a>
+				<a href="https://travelsommelier.com/about/contact-us/" target="_blank">CONTACT US</a>
 			</span>
 		</div>
         <div class="footer-item">

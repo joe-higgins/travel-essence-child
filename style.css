@@ -142,6 +142,11 @@ li  {
 }
 /* Project specific code */
 
+
+		/* TEMP */
+		#main {
+			grid-area: left;
+		}
 #blog-title  {
 	font-family: 'scriptina';
 	font-size: 10rem !important;

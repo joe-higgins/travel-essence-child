@@ -30,4 +30,5 @@ get_header(); ?>
     <?php endwhile; endif; ?>
 </div>
 <!-- end blog-menu -->
+
 <?php get_footer();

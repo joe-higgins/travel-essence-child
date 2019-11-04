@@ -21,6 +21,9 @@ if ( ! defined( 'WPINC' ) ) {
 ?>
 
       <footer id="footer">
+				<div id="subscribe-mobile">
+				  <?php dynamic_sidebar( 'ts_home_left' ); ?>
+				</div>
         <div class="footer-item">
 			<span>+1 781.934.6752</span>
 		</div>

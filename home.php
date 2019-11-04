@@ -16,9 +16,7 @@ get_header(); ?>
 
 <?php get_sidebar(); ?>
 <div id="blog-menu">
-
       <?php get_template_part( 'category-list', get_post_format() ); ?>
-
 </div>
 <!-- end blog-menu -->
 <?php get_footer();

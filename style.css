@@ -258,6 +258,10 @@ to allow custom headers from resposive-mobile theme */
 		#subscribe {
 
 		}
+		#subscribe-mobile {
+			padding: 1rem 3rem;
+			display: none;
+		}
 		#tag-line {
 			text-align: center;
 			padding: 0 0 2rem 0;
@@ -633,7 +637,7 @@ div.footer-item:before {
     grid-template-areas:
       "header header"
       "link quote"
-      "left left"
+			"left left"
       "right right"
       "footer footer";
 	 grid-template-columns: 35% 65%;
@@ -644,6 +648,12 @@ div.footer-item:before {
   #caitlin-statement {
     grid-area: left;
   }
+	#subscribe {
+		display: none;
+	}
+	#subscribe-mobile {
+		display: block;
+	}
 	.image-wrapper {
 	 margin: 2em 0 0 3em;
  }

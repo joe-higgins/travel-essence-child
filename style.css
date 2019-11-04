@@ -637,8 +637,8 @@ div.footer-item:before {
     grid-template-areas:
       "header header"
       "link quote"
-			"left left"
       "right right"
+			"left left"
       "footer footer";
 	 grid-template-columns: 35% 65%;
   }
@@ -648,12 +648,12 @@ div.footer-item:before {
   #caitlin-statement {
     grid-area: left;
   }
-	#subscribe {
+	/* #subscribe {
 		display: none;
 	}
 	#subscribe-mobile {
 		display: block;
-	}
+	} */
 	.image-wrapper {
 	 margin: 2em 0 0 3em;
  }
